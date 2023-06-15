@@ -1,0 +1,64 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <section>
+        <h1>CALCULATOR</h1>
+    </section>
+    <div class="container">
+        <section>
+            <input type="text" id="input"></input>
+        </section>
+        <div class="grid_container">
+           
+              <div><button class="x! op" onclick="fact()">x!</button></div>
+               <div><button class="( button">(</button></div>
+            <div><button class=") button">)</button></div>
+             <div><button class="% op" onclick="percent()">%</button></div>
+              <div><button class="changesign op" onclick="plusMinus()">&#177</button></div>
+			<div><button class="back" onclick="backspc()">DEL</div>
+               <div><button class="clear" onclick="screen.value=''">CLR</button></div>
+            <div><button class="sin op" onclick="asin()">sin<sup><small>-1</small></sup></button></div>
+              <div><button class="sin1 op" onclick="sin()">sin</button></div>
+              <div><button class="sqrt op" onclick="sqrt()">&#8730;</button></div>
+              <div><button class="7 button">7</button></div>
+            <div><button class="8 button">8</button></div>
+            <div><button class="9 button">9</button></div>
+            <div><button class="/ button">&#247;</button></div>
+            <div><button class="cos op" onclick="acos()">cos<sup><small>-1</small></sup></button></div>
+               <div><button class="cos1 op" onclick="cos()">cos</button></div>
+              <div><button class="ln op" onclick="ln()">ln</button></div>
+              <div><button class="4 button">4</button></div>
+            <div><button class="5 button">5</button></div>
+            <div><button class="6 button">6</button></div>
+               <div><button class="* button">&#215;</button></div>
+            <div><button class="tan op" onclick="atan()">tan<sup><small>-1</small></sup></button></div>
+            <div><button class="tan1 op" onclick="tan()">tan</button></div>
+             <div><button class="log op" onclick="log()">log</button></div>
+              <div><button class="1 button">1</button></div>
+            <div><button class="2 button">2</button></div>
+            <div><button class="3 button">3</button></div>
+               <div><button class="- button">-</button></div>
+              <div><button class="pi op" onclick="pi()">&#8508;</button></div>  
+                 <div><button class="e op" onclick="e()">e</button></div>
+            <div><button class="x2 op" onclick="pow()">x<sup><small>2</small></sup></button></div>
+              <div><button class="0 button">0</button></div>
+              <div><button class=". button">.</button></div>
+               <div><button class="equals" onclick="input.value=eval(input.value)">=</button></div>
+             <div><button class="+ button">+</button></div>
+		</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

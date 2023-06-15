@@ -1,0 +1,98 @@
+body {
+  margin: 20px;
+  background-image: url("https://t3.ftcdn.net/jpg/02/66/34/70/360_F_266347082_qnZLppWcnm5a4OA5cGNE1amPi01lpEmV.jpg");
+}
+
+h1{
+  justify-content:center;
+  display:flex;
+  align-items:center;
+  color:white;
+  font-size:50px;
+  font-family: Arial, Helvetica, sans-serif;
+  --c: #3d2461;
+  line-height:1.2em;
+  background:
+    conic-gradient(from -135deg at 100%  50%, var(--c) 90deg, #6a4c93  0) 
+      0  var(--p, 0%) / var(--s, 0%) 200% no-repeat,
+    conic-gradient(from -135deg at 1.2em 50%, #6a4c93  90deg, var(--c) 0) 
+      100% var(--p, 0%) / var(--s, 0%) 200% no-repeat;
+  transition: .4s, background-position 0s;
+}
+
+h1:hover {
+  --p: 100%;
+  --s: calc(50% + .6em);
+}
+
+
+.button,.op{
+  background-image: linear-gradient(#6a4c93,#8B74BD 30%,#b0b0e7,#c3c3ed);
+  color: white;
+  padding:15px 30px  ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin:3px 3px;
+  width:98px;
+  font-size:15px;
+  height:50px;
+}
+
+.button:hover,.op:hover{
+  border: 5px solid white;
+  color: white;
+}
+
+#input{
+  height:60px;
+  width:690px;
+  font-size:40px;
+  justify-content:center;
+  display:flex;
+  text-align:right;
+}
+
+.container{
+	border:1px groove white;
+  	margin: 0 auto;
+    max-width:710px;
+  	padding:11px 3px 9px 12px;
+  	box-shadow: 0px 0px 25px 0px #b0b0e7;
+  border-radius:10px;
+}
+
+.grid_container{
+  display:grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows:auto auto auto auto auto;
+  grid-gap:none;
+}
+
+.back,.clear,.equals{
+  color: white;
+  padding:15px 30px  ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin:3px 3px;
+  width:98px;
+  font-size:15px;
+  height:50px;
+  background-color:#3d2461;
+}
+
+.back:hover,.clear:hover,.equals:hover{
+  background-image: linear-gradient(#6a4c93,#8B74BD 30%,#b0b0e7,#c3c3ed);
+}
+
+
+
+
+          
